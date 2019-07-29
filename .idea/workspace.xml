@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="387f4cc0-2836-4a84-a28f-a95590126de5" name="Default Changelist" comment="S-002 |  git setup-2">
-      <change afterPath="$PROJECT_DIR$/app/views/categories/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/categories/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/categories/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/categories/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/items/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/items/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shopping.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shopping.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-    </list>
+    <list default="true" id="387f4cc0-2836-4a84-a28f-a95590126de5" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/log/" />
@@ -401,7 +388,7 @@
       <option name="presentableId" value="Default" />
       <updated>1564117708496</updated>
       <workItem from="1564117709789" duration="417000" />
-      <workItem from="1564135436606" duration="18806000" />
+      <workItem from="1564135436606" duration="19058000" />
     </task>
     <task id="LOCAL-00001" summary="S-001 | Initial Setup">
       <created>1564155654568</created>
@@ -424,11 +411,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564156029215</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="S-003 | category and items controller and model">
+      <created>1564398992325</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564398992325</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19223000" />
+    <option name="totallyTimeSpent" value="19475000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="842" extended-state="0" />
@@ -462,7 +456,8 @@
     <MESSAGE value="S-001 | Initial Setup" />
     <MESSAGE value="S-002 |  git setup" />
     <MESSAGE value="S-002 |  git setup-2" />
-    <option name="LAST_COMMIT_MESSAGE" value="S-002 |  git setup-2" />
+    <MESSAGE value="S-003 | category and items controller and model" />
+    <option name="LAST_COMMIT_MESSAGE" value="S-003 | category and items controller and model" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config/puma.rb">
