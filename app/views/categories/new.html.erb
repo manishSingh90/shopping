@@ -1,0 +1,32 @@
+<h1>New Category</h1>
+<p>I am new category template</p>
+
+
+<%= form_with scope: :category, url: categories_path ,local: true do |form| %>
+
+  <% if @category.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@category.errors.count, "error") %> prohibited
+        this category from being saved:
+      </h2>
+      <ul>
+        <% @category.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <%= form.label :name %>
+  <%= form.text_field :name %><br>
+
+  <%= form.label :description %>
+  <%= form.text_area :description %><br>
+
+  <%= form.submit "Create"%>
+
+<% end %>
+
+<%= link_to "Show All Category", categories_path %><br>

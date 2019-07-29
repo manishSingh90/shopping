@@ -1,0 +1,59 @@
+<h1>Category Information</h1>
+<p>
+  <%= @category.name %>
+</p>
+<p>
+  <%= @category.description %>
+</p>
+<%= link_to "Delete", category_path(@category),
+            method: :delete,
+            data: {confirm: 'Are you sure?'} %>
+<%= link_to "Show All Category", categories_path %><br>
+
+
+<h1>Items Information</h1>
+
+<table>
+  <thead>
+  <th>
+    Name
+  </th>
+  <th>
+
+  </th>
+  </thead>
+  <tbody>
+  <% if Category.last.items.present? %>
+    <% @category.items.each do |item, i| %>
+      <tr>
+        <td>
+          <%= item.price %><br><%= item.name %><br>
+          <%= link_to 'Delete', [item.category, item], method: :delete, data: { confirm: 'Are you sure?' } %>
+          <%= link_to 'Show', category_item_path(@category, item) %>
+          <%#= link_to 'Show', category_item_url(category_id: @category.id, id: item.id) %>
+          <%= link_to 'Update', edit_category_item_path(@category, item) %>
+        </td>
+      </tr>
+    <% end %>
+  <% end %>
+
+
+  </tbody>
+</table>
+
+
+<h2>Add New Items</h2>
+
+<%= form_with(model: [@category, @category.items.build], local: true) do |form| %>
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+  <p>
+    <%= form.label :price %><br>
+    <%= form.text_area :price %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

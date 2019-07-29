@@ -1,0 +1,25 @@
+<h1>Category Information</h1>
+
+<table>
+  <thead>
+  <th>
+    Name
+  </th>
+  <th>
+    Description
+  </th>
+  </thead>
+  <tbody>
+
+  <% @categories.each do |category| %>
+    <tr>
+      <td><%= category.name %> </td>
+      <td><%= category.description %> </td>
+      <td><%= link_to 'Show', category_path(category) %> </td>
+      <td><%= link_to 'Update', edit_category_path(category) %> </td>
+    </tr>
+  <% end %>
+
+  </tbody>
+</table>
+<button><%= link_to "Create Category", new_category_path %></button>

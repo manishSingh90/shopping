@@ -1,0 +1,32 @@
+<h1>Edit Item</h1>
+
+<%#= form_with(model: @category.items, local: true) do |form| %>
+<%= form_with(model: [@category, @item], local: true) do |form| %>
+
+  <%# if @item.errors.any? %>
+<!--    <div id="error_explanation">-->
+<!--      <h2>-->
+<!--        <%#= pluralize(@item.errors.count, "error") %> prohibited-->
+<!--        this category from being saved:-->
+<!--      </h2>-->
+<!--      <ul>-->
+        <%# @item.errors.full_messages.each do |msg| %>
+<!--          <li><%#= msg %></li>-->
+        <%# end %>
+<!--      </ul>-->
+<!--    </div>-->
+  <%# end %>
+  <%# end %>
+
+
+  <%= form.label :name %>
+  <%= form.text_field :name %><br>
+
+  <%= form.label :price %>
+  <%= form.text_area :price %><br>
+
+  <%= form.submit "Update"%>
+
+<% end %>
+
+<%= link_to "Show All Category", categories_path %><br>
